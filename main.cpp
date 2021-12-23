@@ -2,17 +2,17 @@
 #include <QLabel>
 #include <QFont>
 
-int main(int argc, char *argv[])
+int main(int argc, char* argv[])
 {
     QApplication app(argc, argv);
     QLabel myLabel;
     myLabel.setWindowTitle("Hello");
-    QFont serifFont("Times", 16, QFont::Bold);
+    QFont serifFont("Times", 20, QFont::Bold);
     myLabel.setFont(serifFont);
     myLabel.setText("Hello!<br/>Programming by Qt is fun.");
     myLabel.setAlignment(Qt::AlignCenter);
-    myLabel.setStyleSheet("color: blue; background-color:green;");
-    myLabel.resize(300, 150);
+    myLabel.setStyleSheet("color: blue; background-color:gray;");
+    myLabel.resize(400, 175);
     myLabel.show();
     return app.exec();
 }
